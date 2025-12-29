@@ -1,8 +1,6 @@
 import fp from "fastify-plugin"
 import mailer from "fastify-mailer"
-import dotenv from 'dotenv'
-
-dotenv.config()
+import 'dotenv/config';
 
 export default fp(async function (app) {
     app.register(mailer,{

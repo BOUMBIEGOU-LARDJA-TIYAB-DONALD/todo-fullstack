@@ -11,8 +11,8 @@ import { storedata,registeruser,logout,Sendmail, verifycode } from "./routes/pos
 import fastifyFormbody from "@fastify/formbody"
 import { dotask,undotask,sendresetmail,verifyreset,changepass} from "./routes/put.js";
 import { deltask } from "./routes/delete.js";
-import dotenv from "dotenv"
-dotenv.config()
+import 'dotenv/config';
+
 import mailerPlugin  from "./utils/mailer.js";
 import fastifyMultipart from '@fastify/multipart';
 
