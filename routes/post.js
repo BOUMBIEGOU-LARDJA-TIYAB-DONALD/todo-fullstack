@@ -65,7 +65,7 @@ export async function Sendmail(req,res,app) {
   let randnum = Math.floor(Math.random()*1000000)
   
   if(exist){
-     const row = await db('codes').where({ email }).first();
+     const row = await db('codes').where({ mail:email }).first();
   const codes = row ? row.code : null;
   randnum=codes
    return  res.send({"exist":true})
